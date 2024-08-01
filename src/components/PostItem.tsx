@@ -1,7 +1,7 @@
-import { cn } from "@/app/utils";
 import { ChevronRightIcon } from "lucide-react";
+import type { Post } from "@voidfull/js-sdk";
 
-import type { Post } from "../../../../../../../voidfull/main/packages/js-sdk";
+import { cn } from "@/utils";
 
 interface Props {
   post: Post;

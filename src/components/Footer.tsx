@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { cn } from "@/app/utils";
-import {useEffect, useMemo} from "react";
+import { cn } from "@/utils";
+import { useEffect, useMemo } from "react";
 
 export function Footer() {
   const searchParams = new URLSearchParams();
@@ -12,8 +12,8 @@ export function Footer() {
 
   const link = useMemo(() => {
     const url = "https://voidfull.com";
-    return `${url}?${searchParams.toString()}`
-  }, [searchParams])
+    return `${url}?${searchParams.toString()}`;
+  }, [searchParams]);
 
   // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
@@ -27,7 +27,7 @@ export function Footer() {
           href={link}
           className={cn(
             "px-3 py-1.5",
-            "hover:bg-gray-100 rounded-md",
+            "hover:bg-gray-100/70 rounded-md",
             "flex items-center",
             "space-x-1",
           )}

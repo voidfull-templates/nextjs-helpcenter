@@ -1,7 +1,7 @@
 import dayjs from "dayjs";
 import type { ActiveCategory } from "@voidfull/js-sdk";
 
-import { cn } from "@/app/utils";
+import { cn } from "@/utils";
 
 interface Props {
   category: ActiveCategory;

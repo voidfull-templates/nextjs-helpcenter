@@ -1,7 +1,6 @@
 import { SquareArrowOutUpRightIcon } from "lucide-react";
-import Image from "next/image";
 
-import { cn } from "@/app/utils";
+import { cn } from "@/utils";
 
 export function Header() {
   return (
@@ -10,13 +9,16 @@ export function Header() {
         className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
         href="/"
       >
-        <Image
-          src="/voidfull.svg"
-          alt="voidfull logo"
-          width={32}
-          height={32}
-          priority
-        />
+        <div className="w-8 h-8" aria-hidden={true}>
+          <img
+            src="/voidfull.svg"
+            alt="voidfull logo"
+            width={32}
+            height={32}
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
         <p className="text-xl font-semibold text-white">Voidfull</p>
       </a>
 

@@ -2,7 +2,7 @@
 
 import { TriangleAlertIcon, CheckIcon } from "lucide-react";
 import { useMemo, useState } from "react";
-import { cn } from "@/app/utils";
+import { cn } from "@/utils";
 
 function Variables() {
   const [vars, setVars] = useState({

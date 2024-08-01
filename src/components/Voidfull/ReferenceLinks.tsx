@@ -1,4 +1,4 @@
-import { cn } from "@/app/utils";
+import { cn } from "@/utils";
 
 interface ItemProps {
   title: string;
