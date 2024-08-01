@@ -1,7 +1,7 @@
-import { ChevronRightIcon } from "lucide-react";
-
 import { Client as Voidfull } from "@/lib/Voidfull";
 import { cn } from "@/app/utils";
+
+import { PostItem } from "@/app/collections/[collection]/components/PostItem";
 
 async function CategoryById(id: string) {
   const getByIdResponse = await Voidfull.sites.categories.retrieve({
@@ -51,21 +51,7 @@ export default async function Page(options: PageProps) {
           {posts?.length > 0 ? (
             posts.map((post) => (
               <li key={post.id} className={cn("pt-2")}>
-                <a
-                  className={cn(
-                    "rounded-xl px-6 py-4",
-                    "flex items-center justify-between w-full",
-                    "hover:bg-indigo-50/40 hover:text-indigo-500",
-                  )}
-                  href={`/articles/${post.id}-${post.slug}`}
-                >
-                  <p>{post.title}</p>
-
-                  <ChevronRightIcon
-                    aria-hidden={true}
-                    className={cn("stroke-indigo-500")}
-                  />
-                </a>
+                <PostItem post={post} />
               </li>
             ))
           ) : (
