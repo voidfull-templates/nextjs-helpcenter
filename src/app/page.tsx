@@ -1,7 +1,7 @@
 import { Client as Voidfull } from "@/lib/Voidfull";
 import { cn, hasVoidfullVariables } from "@/app/utils";
 
-import { ReferenceLinks } from "@/app/components/ReferenceLinks";
+import { Root as VoidfullWelcome } from "@/app/components/Voidfull/Root";
 import { CategoryItem } from "@/app/components/Category/Item";
 
 async function getCategories() {
@@ -19,7 +19,7 @@ export default async function Home() {
   return (
     <main className="mx-auto max-w-screen-lg px-4">
       <section className={cn("my-10")}>
-        <ReferenceLinks />
+        <VoidfullWelcome />
       </section>
 
       {data?.length > 0 ? (
