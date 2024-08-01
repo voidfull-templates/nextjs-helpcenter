@@ -1,5 +1,5 @@
 import { Client as Voidfull } from "@/lib/Voidfull";
-import { cn } from "@/app/utils";
+import {cn, hasVoidfullVariables} from "@/app/utils";
 
 import { PostItem } from "@/app/collections/[collection]/components/PostItem";
 
@@ -64,6 +64,8 @@ export default async function Page(options: PageProps) {
 }
 
 export async function generateStaticParams() {
+  if (!hasVoidfullVariables()) return [];
+
   const response = await Voidfull.sites.categories.list();
 
   return response.categories.map((category) => ({

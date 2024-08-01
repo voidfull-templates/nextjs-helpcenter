@@ -1,5 +1,5 @@
 import { Client as Voidfull } from "@/lib/Voidfull";
-import { cn } from "@/app/utils";
+import {cn, hasVoidfullVariables} from "@/app/utils";
 import { BookOpenIcon } from "lucide-react";
 import dayjs from "dayjs";
 import { Interweave } from "interweave";
@@ -68,6 +68,8 @@ export default async function Page(options: PageProps) {
 }
 
 export async function generateStaticParams() {
+  if (!hasVoidfullVariables()) return [];
+
   const response = await Voidfull.sites.posts.list();
 
   return response.posts.map((post) => ({

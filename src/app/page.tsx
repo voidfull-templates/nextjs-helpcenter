@@ -1,10 +1,12 @@
 import { Client as Voidfull } from "@/lib/Voidfull";
-import { cn } from "@/app/utils";
+import { cn, hasVoidfullVariables } from "@/app/utils";
 
 import { ReferenceLinks } from "@/app/components/ReferenceLinks";
 import { CategoryItem } from "@/app/components/Category/Item";
 
 async function getCategories() {
+  if (!hasVoidfullVariables()) return [];
+
   const response = await Voidfull.sites.categories.list({
     status: ["active"],
   });
