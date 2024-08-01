@@ -31,7 +31,7 @@ export function Header() {
                 "flex items-center justify-between",
                 "space-x-2 text-white",
                 "rounded-lg px-2.5 py-1",
-                "hover:bg-white/25 focus:bg-white/25 focus:outline-none"
+                "hover:bg-white/25 focus:bg-white/25 focus:outline-none",
               )}
             >
               <span className={cn("font-medium text-sm")}>go to homepage</span>

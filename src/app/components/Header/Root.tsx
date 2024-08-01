@@ -9,7 +9,7 @@ export function Root() {
         <Header />
 
         <h1 className={cn("text-center text-3xl text-white font-semibold")}>
-          Voidfull Next.js Help center
+          Voidfull Help center
         </h1>
       </div>
     </div>

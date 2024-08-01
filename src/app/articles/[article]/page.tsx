@@ -3,7 +3,7 @@ import { cn } from "@/app/utils";
 import { BookOpenIcon } from "lucide-react";
 import dayjs from "dayjs";
 import { Interweave } from "interweave";
-import { polyfill } from "interweave-ssr"
+import { polyfill } from "interweave-ssr";
 
 async function ArticleById(id: string) {
   const getArticleResponse = await Voidfull.sites.posts.retrieve({

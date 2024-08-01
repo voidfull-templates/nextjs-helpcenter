@@ -5,7 +5,7 @@ const token = process.env.NEXT_PUBLIC_VOIDFULL_CONTENT_TOKEN;
 
 const Client = new Voidfull({
   siteId,
-  token
+  token,
 });
 
-export { Client }
+export { Client };
