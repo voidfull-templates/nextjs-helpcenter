@@ -13,6 +13,12 @@ Use this template to quickly get started by creating a Help Center for your own 
 3. Create a Site
 4. Create and copy the Token
 
+### One-Click deploy
+
+You can skip the step for setting up locally and deploy it on Railway.
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/7NcJhi?referralCode=mittalyashu)
+
 ### Setup your local development
 
 You need to clone this repository and install the dependencies:
