@@ -1,6 +1,6 @@
 ## Voidfull Next.js Help Center template
 
-Preview: [nextjs-helpcenter.onrender.com](https://nextjs-helpcenter.onrender.com/)
+Preview: [nextjs-helpcenter-template.voidfull.com](https://nextjs-helpcenter-template.voidfull.com)
 
 Use this template to quickly get started by creating a Help Center for your own Product / Company using [Voidfull](https://voidfull.com).
 
